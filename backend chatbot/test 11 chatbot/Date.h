@@ -8,7 +8,7 @@ using namespace std;
 class Date
 {
 public:
-    string getTimestamp() {
+    static string getTimestamp() {
         // Get the current time
         time_t currentTime;
         time(&currentTime);
@@ -23,6 +23,7 @@ public:
 
         return oss.str();
     }
+    
 
 };
 

@@ -8,31 +8,31 @@ using namespace std;
 class Message
 {
 private: string content;
-	   Date timestamp;
-	   User sender;
+	     string timestamp;
+
 public:
 	Message() {}
-	Message(string content, Date timestamp, User sender) {}
+	Message(string content, string timestamp) {
+		set_content(content);
+		set_timestamp();
+	}
 
 	void set_content(string content) {
 		this->content = content;
 	}
-	void set_timestamp(Date timestamp) {
-		Date x;x.getTimestamp();
-		this->timestamp = timestamp;
-	}
-	void set_user(User sender) {
-		this->sender = sender;
+	void set_timestamp() {
+		Date timestamp;
+		string curenttimestamp = timestamp.getTimestamp();
+
+		this->timestamp = curenttimestamp;
 	}
 	string get_content() {
 		return content;
 	}
-	Date get_timestamp() {
-		return timestamp;
+	string get_timestamp() {
+			return timestamp;
 	}
-	User get_user() {
-		return sender;
-	}
+	/*
 	void sendMessage(User& sender, chatbot& bot, const string& content) {
 		
 		Date timestamp;
@@ -48,6 +48,6 @@ public:
 		// Simulate sending the message to the chatbot
 		chatbot.receiveMessage(*this);
 	}
-
+	*/
 };
 

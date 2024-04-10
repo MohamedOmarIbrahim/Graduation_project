@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="appchatbot.cpp" />
     <ClCompile Include="chatbot.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="EmergencyServices.cpp" />
@@ -138,6 +139,7 @@
     <ClCompile Include="validation.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="appchatbot.h" />
     <ClInclude Include="chatbot.h" />
     <ClInclude Include="Date.h" />
     <ClInclude Include="EmergencyServices.h" />

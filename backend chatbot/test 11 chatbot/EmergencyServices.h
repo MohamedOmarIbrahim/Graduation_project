@@ -10,25 +10,27 @@ private: User caller;
 		 location User_location;
 public:
 	EmergencyServices(User caller, Date timestamp, location User_location) {
-
+		set_caller(caller);
+		set_timestamp(timestamp);
+		set_location(User_location);
 	}
 		void set_caller(User caller) {
 			this->caller = caller;
 	}
 		void set_timestamp(Date timestamp) {
 			this->timestamp = timestamp;
-		}
+	}
 		void set_location(location location) {
 			this->User_location = location;
-		}
+	}
 		User get_calller() {
 			return caller;
-		}
+	}
 		Date get_timestamp() {
 			return timestamp;
-		}
+	}
 		location get_location() {
 			return User_location;
-		}
+	}
 };
 

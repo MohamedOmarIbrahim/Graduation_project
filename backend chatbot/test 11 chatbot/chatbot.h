@@ -8,9 +8,9 @@ class chatbot
 public:
 	//chatbot(){}
 	// Function to receive a message from a user
-		void receiveMessage(const Message & message) {
+		/*void receiveMessage(const Message& message) {
 		
-	}
+	}*/
 	void analyze_emergency() {
 		string responses[] = {
 		   "Oh no! Let's assess the situation and find a solution together!",
